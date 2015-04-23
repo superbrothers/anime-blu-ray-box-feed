@@ -1,0 +1,16 @@
+doctype xml
+rss(version='2.0', xmlns:atom='<a href="http://www.w3.org/2005/Atom" rel="nofollow">http://www.w3.org/2005/Atom</a>')
+    channel
+        title Anime Blu-ray box: amazon.com
+        link <a href="#{targetUrl}" rel="nofollow">#{targetUrl}</a>
+        description amazon.com Anime Blu-ray Box
+        language en-US
+        each item in items
+            item
+                title= item.title
+                link <a href="#{item.link}" rel="nofollow">#{item.link}</a>
+                description
+                    | <![CDATA[
+                    | !{item.html}
+                    | ]]>
+                pubDate= new Date().toUTCString()

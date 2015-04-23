@@ -1,0 +1,15 @@
+{
+  "name": "anime-blu-ray-box-feed",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "/usr/bin/env node app.js"
+  },
+  "author": "Kazuki Suda <kazuki.suda@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^0.9.0",
+    "jade": "^1.9.2",
+    "jsdom": "^3.1.2",
+    "request": "^2.55.0"
+  }
+}
